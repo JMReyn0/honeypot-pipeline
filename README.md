@@ -5,7 +5,7 @@ cloud VM, plus a pipeline that turns the attack logs into a daily report:
 credentials tried, commands run, malware pulled, geographic spread, and a
 refreshed IP blocklist.
 
-**[→ latest report](site/index.html)** · updated daily from live sensor data
+**[→ latest report](https://justinmreynolds93-afk.github.io/honeypot-pipeline/)** · updated daily from live sensor data
 
 ![ci](https://github.com/justinmreynolds93-afk/honeypot-pipeline/actions/workflows/ci.yml/badge.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue)
