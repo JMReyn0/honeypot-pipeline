@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Honeypot report</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbfa; --fg: #1a1a1a; --muted: #6b7280; --card: #fff;
+    --line: #e5e7eb; --bar: #2563eb; --accent: #b91c1c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1115; --fg: #e6e6e6; --muted: #9aa0a6; --card: #171a21;
+            --line: #262b36; --bar: #3b82f6; --accent: #f87171; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 15px/1.55 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  main { max-width: 960px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  h1 { margin: 0 0 .25rem; font-size: 1.6rem; }
+  h2 { margin: 2.5rem 0 .75rem; font-size: 1.15rem; }
+  .muted { color: var(--muted); }
+  .sub { color: var(--muted); margin: 0 0 2rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .75rem; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; }
+  .stat b { display: block; font-size: 1.5rem; }
+  .stat span { color: var(--muted); font-size: .85rem; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 2.5rem; }
+  @media (max-width: 720px) { .cols { grid-template-columns: 1fr; } }
+  .bars { width: 100%; height: auto; }
+  .bars rect { fill: var(--bar); }
+  .bars .lbl { fill: var(--fg); font-size: 12px; }
+  .bars .val { fill: var(--muted); font-size: 11px; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td { text-align: left; padding: .35rem .6rem; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  code { background: color-mix(in srgb, var(--fg) 8%, transparent); padding: .05rem .3rem; border-radius: 4px; }
+  .scroll { overflow-x: auto; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>SSH / Telnet honeypot report</h1>
+  <p class="sub">
+    {{ span[0] }} &rarr; {{ span[1] }} &middot; generated {{ generated }} &middot;
+    <a href="https://github.com/justinmreynolds93-afk/honeypot-pipeline">source</a>
+  </p>
+
+  <div class="grid">
+    <div class="stat"><b>{{ "{:,}".format(totals.sessions) }}</b><span>sessions</span></div>
+    <div class="stat"><b>{{ "{:,}".format(totals.ips) }}</b><span>distinct source IPs</span></div>
+    <div class="stat"><b>{{ "{:,}".format(totals.logins) }}</b><span>login attempts</span></div>
+    <div class="stat"><b>{{ "{:,}".format(totals.commands) }}</b><span>shell commands</span></div>
+    <div class="stat"><b>{{ "{:,}".format(totals.downloads) }}</b><span>payloads pulled</span></div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <h2>Top source IPs</h2>
+      {{ top_ips | bars }}
+    </div>
+    <div>
+      <h2>Origin countries (by IP)</h2>
+      {{ countries | bars }}
+    </div>
+    <div>
+      <h2>Usernames tried</h2>
+      {{ top_users | bars }}
+    </div>
+    <div>
+      <h2>Passwords tried</h2>
+      {{ top_passwords | bars }}
+    </div>
+  </div>
+
+  <h2>Most-attempted credential pairs</h2>
+  <div class="scroll"><table>
+    <tr><th>username / password</th><th>attempts</th></tr>
+    {% for combo, n in top_combos %}<tr><td><code>{{ combo }}</code></td><td>{{ n }}</td></tr>{% endfor %}
+  </table></div>
+
+  <h2>Most-run commands</h2>
+  <div class="scroll"><table>
+    <tr><th>command</th><th>count</th></tr>
+    {% for cmd, n in top_commands %}<tr><td><code>{{ cmd[:160] }}</code></td><td>{{ n }}</td></tr>{% endfor %}
+  </table></div>
+
+  <h2>Payloads downloaded</h2>
+  <div class="scroll"><table>
+    <tr><th>url</th><th>sha256</th><th>count</th></tr>
+    {% for url, sha, n in downloads %}<tr><td><code>{{ url }}</code></td><td><code>{{ (sha or '')[:16] }}</code></td><td>{{ n }}</td></tr>{% else %}<tr><td colspan="3" class="muted">none yet</td></tr>{% endfor %}
+  </table></div>
+
+  <h2>SSH client strings</h2>
+  <div class="scroll"><table>
+    <tr><th>client</th><th>sessions</th></tr>
+    {% for v, n in clients %}<tr><td><code>{{ v }}</code></td><td>{{ n }}</td></tr>{% endfor %}
+  </table></div>
+
+  <footer>
+    <a href="../data/blocklist.txt">blocklist.txt</a> &middot;
+    <a href="../data/credentials.csv">credentials.csv</a> &middot;
+    <a href="../THREATS.md">THREATS.md</a><br>
+    Cowrie low-interaction honeypot. Emulated shell in a jail; attacker commands
+    are not executed on a real system.
+  </footer>
+</main>
+</body>
+</html>

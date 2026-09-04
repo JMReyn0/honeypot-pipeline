@@ -1,0 +1,11 @@
+# Which credentials Cowrie "accepts" — accepting some lets you capture the
+# post-login command sequence (the interesting part). Format:
+#   username:x:password
+#   username:x:*            (any password)
+#   username:x:!password    (never this one)
+# Keep it small; botnets try thousands and you only need a few to land.
+
+root:x:root
+root:x:admin
+root:x:123456
+admin:x:admin
