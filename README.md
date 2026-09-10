@@ -1,23 +1,32 @@
 # honeypot-pipeline
 
-An SSH/Telnet honeypot ([Cowrie](https://github.com/cowrie/cowrie)) on a free
-cloud VM, plus a pipeline that turns the attack logs into a daily report:
-credentials tried, commands run, malware pulled, geographic spread, and a
-refreshed IP blocklist.
+An SSH/Telnet honeypot ([Cowrie](https://github.com/cowrie/cowrie)) plus a
+pipeline that turns the attack logs into a report: credentials tried, commands
+run, malware pulled, geographic spread, and a refreshed IP blocklist.
 
-**[→ latest report](https://justinmreynolds93-afk.github.io/honeypot-pipeline/)** · updated daily from live sensor data
+**[→ report](https://justinmreynolds93-afk.github.io/honeypot-pipeline/)** · rendered from the bundled sample capture — see [Status](#status)
 
 ![ci](https://github.com/justinmreynolds93-afk/honeypot-pipeline/actions/workflows/ci.yml/badge.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![python](https://img.shields.io/badge/python-3.12-brightgreen)
+
+## Status
+
+The pipeline is complete and CI-tested end to end; the published report is
+generated from [`data/sample/cowrie.sample.json`](data/sample/cowrie.sample.json)
+(~200 sanitized events). The sensor half is written and documented but **not
+currently deployed** — standing up the Oracle Cloud Always Free VM is blocked
+on an account/billing verification issue. [`sensor/deploy.sh`](sensor/deploy.sh)
+is host-agnostic, so any cheap VPS works too; once a sensor is live the daily
+`git push` makes the commit history the attack timeline.
 
 ## What this is
 
 Point an SSH honeypot at the open internet and within minutes botnets are trying
 `root:123456`. This repo:
 
-1. **`sensor/`** — deploys Cowrie in Docker on an Oracle Cloud *Always Free* VM,
-   moves real SSH out of the way, and captures every session as JSON.
+1. **`sensor/`** — deploys Cowrie in Docker on a small VM, moves real SSH out of
+   the way, and captures every session as JSON.
 2. **`pipeline/`** — parses `cowrie.json` into DuckDB, enriches the top source IPs
    with GeoIP + AbuseIPDB, and renders:
    - `site/index.html` — a static report (no server, published to GitHub Pages)
@@ -25,9 +34,12 @@ Point an SSH honeypot at the open internet and within minutes botnets are trying
    - `data/credentials.csv` — every username/password pair attempted
    - `THREATS.md` — a running written summary
 3. The VM regenerates all of that on a cron and `git push`es it here, so the
-   commit history *is* the attack timeline.
+   commit history becomes the attack timeline.
 
 ## Architecture
+
+The full pipeline, as deployed (steps 1 and 3 need a live sensor — see
+[Status](#status)):
 
 ```
  internet ──SSH/Telnet──▶  Cowrie (Docker, :22)  ──▶  cowrie.json
@@ -60,8 +72,9 @@ exactly this on every push.
 
 ## Stand up the live sensor
 
-You need a VM. [docs/oracle-cloud-setup.md](docs/oracle-cloud-setup.md) walks
-through an Oracle Cloud Always Free instance ($0, ARM, always-on), then:
+You need a throwaway VM — any provider. [docs/oracle-cloud-setup.md](docs/oracle-cloud-setup.md)
+walks through an Oracle Cloud Always Free instance ($0, ARM, always-on); a $4–6/mo
+VPS works the same way. Then:
 
 ```bash
 scp -r sensor/ ubuntu@<vm-ip>:~/          # after moving your real SSH to :64295
