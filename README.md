@@ -4,9 +4,9 @@ An SSH/Telnet honeypot ([Cowrie](https://github.com/cowrie/cowrie)) plus a
 pipeline that turns the attack logs into a report: credentials tried, commands
 run, malware pulled, geographic spread, and a refreshed IP blocklist.
 
-**[→ report](https://justinmreynolds93-afk.github.io/honeypot-pipeline/)** · rendered from the bundled sample capture — see [Status](#status)
+**[→ report](https://jmreyn0.github.io/honeypot-pipeline/)** · rendered from the bundled sample capture — see [Status](#status)
 
-![ci](https://github.com/justinmreynolds93-afk/honeypot-pipeline/actions/workflows/ci.yml/badge.svg)
+![ci](https://github.com/JMReyn0/honeypot-pipeline/actions/workflows/ci.yml/badge.svg)
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![python](https://img.shields.io/badge/python-3.12-brightgreen)
 

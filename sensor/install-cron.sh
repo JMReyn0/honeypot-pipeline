@@ -7,7 +7,7 @@
 #   - you know the repo SSH URL
 set -euo pipefail
 
-REPO_URL="${1:-git@github.com:justinmreynolds93-afk/honeypot-pipeline.git}"
+REPO_URL="${1:-git@github.com:JMReyn0/honeypot-pipeline.git}"
 CHECKOUT=/opt/honeypot-pipeline
 KEY=/root/.ssh/honeypot_deploy
 
